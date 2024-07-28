@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Characters</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bungee', sans-serif;
+      background: linear-gradient(to right, #000, #000, #8B0000);
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .logo {
+      float: left;
+      margin-right: 20px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+      transform: translateY(-3px);
+    }
+
+    .hero-section {
+      position: relative;
+      height: auto;
+      overflow: hidden;
+      margin-top: 0px;
+      background: linear-gradient(to right, #000, #000, #8B0000);
+      display: flex;
+    }
+
+    .hero-content {
+      flex: 1;
+      padding: 5% 5%;
+      text-align: left;
+    }
+
+    .hero-content h1,
+    .hero-content p,
+    .character-list,
+    .youtube-video {
+      width: 100%;
+      /* Make sure the content spans the full width of the hero section */
+    }
+
+    .hero-content h1 {
+      font-size: 2em;
+      /* Adjusted font size */
+      color: red;
+      margin-bottom: 15px;
+      /* Adjusted margin */
+    }
+
+    .hero-content p {
+      font-size: 1em;
+      /* Adjusted font size */
+      color: #fff;
+      margin-bottom: 20px;
+      /* Adjusted margin */
+      text-align: justify;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+    }
+
+    .orange-line {
+      border: 2px solid orange;
+      width: 100%;
+      margin: 15px 0;
+      /* Adjusted margin */
+    }
+
+    .character-list {
+      font-size: 1em;
+      /* Adjusted font size */
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .character-list ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .character-list li {
+      margin-bottom: 10px;
+    }
+
+    .youtube-video {
+      margin-top: 15px;
+    }
+
+    audio {
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <audio controls autoplay loop>
+    <source src="audio/Kids_256k.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" height="40">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Characters</a>
+    <a href="page3.html">Monsters</a>
+  </nav>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Season 1</h1>
+      <p>Set in the 1980s in the fictional town of Hawkins, Indiana, Stranger Things Season 1 follows the mysterious
+        disappearance of a young boy named Will Byers. As his friends and family search for him, they uncover a series
+        of supernatural mysteries, including a girl with psychokinetic abilities known as Eleven. The group encounters
+        government experiments, parallel dimensions, and a monstrous creature from the Upside Down. Filled with
+        suspense, friendship, and 80s nostalgia, Season 1 explores the thin line between reality and the unknown.</p>
+      <div class="character-list">
+        <h1>Main Cast:</h1>
+        <ul>
+          <li>Eleven: A young girl with telekinetic and psychokinetic abilities raised in Hawkins National Laboratory.
+          </li>
+          <li>Mike Wheeler: One of Will's best friends and El's love interest.</li>
+          <li>Dustin Henderson: Another of Will's friends, known for his love of science and adventure.</li>
+          <li>Lucas Sinclair: Will's best friend and the voice of reason in the group.</li>
+          <li>Will Byers: The boy who gets trapped in the Upside Down.</li>
+          <li>Joyce Byers: Will's determined mother.</li>
+          <li>Jim Hopper:The gruff but caring chief of Hawkins police.</li>
+        </ul>
+        <h1>Supporting Cast:</h1>
+        <ul>
+          <li>Jonathan Byers: Will's older brother, protective and artistic.</li>
+          <li>Nancy Wheeler: Mike's older sister, drawn to Jonathan and investigating the Upside Down.</li>
+          <li>Dr. Martin Brenner: The director of Hawkins National Laboratory and Eleven's former caretaker.</li>
+          <li>Barb Holland: Nancy's best friend, who mysteriously disappears.</li>
+          <li>Eleven's Mother: A woman with telekinetic abilities who was experimented on at Hawkins Lab.</li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b9EkMc79ZSU?si=iPw8CCiOSkNJVcGY"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/Stranger Things 1.jpeg" alt="Season 1 Poster" class="poster">
+    </div>
+  </section>
+
+  <div class="orange-line"></div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Season 2</h1>
+      <p>A year after Will's return from the Upside Down, Hawkins faces new threats. A shadowy monster lurks, infecting
+        townsfolk and spreading a web of darkness. Eleven, weakened after closing the gate, struggles to regain her
+        powers. Meanwhile, new student Max Mayfield brings her own baggage, haunted by a mysterious past. As old
+        friendships are tested and new alliances forged, the kids face familiar horrors and uncover shocking truths
+        about Hawkins' hidden secrets.</p>
+      <div class="character-list">
+        <h1>Main Cast:</h1>
+        <ul>
+          <li>Same as Season 1, plus:</li>
+          <li>Max Mayfield: Lucas's new stepsister, tough and independent.</li>
+          <li>Will Byers: Now back from the Upside Down, but haunted by his experiences.</li>
+        </ul>
+        <h1>Supporting Cast:</h1>
+        <ul>
+          <li>Billy Hargrove: Max's abusive stepbrother, connected to the Upside Down entity.</li>
+          <li>Bob Newby: Joyce's supportive boyfriend, killed by the Demogorgon.</li>
+          <li>Dr. Sam Owens: The new director of Hawkins Lab, more humane than Brenner.</li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R1ZXOOLMJ8s?si=gBEk3DFTbstNCqwg"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/Stranger Things 2.jpeg" alt="Season 2 Poster" class="poster">
+    </div>
+  </section>
+
+  <div class="orange-line"></div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Season 3</h1>
+      <p>It's the summer of 1985, and Hawkins is basking in the joys of a new mall, Starcourt. But beneath the neon
+        lights and carefree fun, a sinister plot unfolds. The Russians have reopened the gate to the Upside Down,
+        seeking to exploit its power for their own gain. Meanwhile, Eleven struggles to adapt to life without her
+        powers, navigating teenage romance and growing pains. As the Mind Flayer returns, stronger and more dangerous
+        than ever, the gang must band together once more to save Hawkins from total annihilation. </p>
+      <div class="character-list">
+        <h1>Main Cast:</h1>
+        <ul>
+          <li>Same as Season 2, plus:</li>
+          <li>Robin Buckley: Steve Harrington's co-worker and eventual love interest.</li>
+          <li>Erica Sinclair: Lucas's younger sister, sassy and resourceful.</li>
+        </ul>
+        <h1>Supporting Cast:</h1>
+        <ul>
+          <li>Billy Hargrove: Now possessed by the Mind Flayer.</li>
+          <li>Jim Hopper: Now the mayor of Hawkins, struggling with his new role.</li>
+          <li>Dr. Alexei: A Russian scientist who helps Hopper close the gate to the Upside Down.</li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Am4v0C_z8c?si=M9jqipXyElz6BSVh"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/Stranger Things 3.jpeg" alt="Season 3 Poster" class="poster">
+    </div>
+  </section>
+
+  <div class="orange-line"></div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Season 4</h1>
+      <p>Six months have passed since the Battle of Starcourt, and Hawkins is reeling from the loss of Hopper and Billy.
+        Will still suffers from the lingering effects of the Upside Down, haunted by visions of a terrifying new
+        creature. Meanwhile, a series of brutal murders rocks the town, drawing the attention of a charismatic yet
+        troubled metalhead named Eddie Munson. As the kids unravel the mystery, they discover a hidden dimension called
+        the Creel House, gateway to a horrifying entity known as Vecna.</p>
+      <div class="character-list">
+        <h1>Main Cast:</h1>
+        <ul>
+          <li>Same as Season 3, plus:</li>
+          <li>Murray Bauman: A conspiracy theorist who helps Joyce and Hopper.</li>
+          <li>Eddie Munson: The leader of Hawkins High's Hellfire Club, embroiled in the Upside Down
+            mystery.</li>
+          <li>Argyle: Jonathan's new friend in California, with a laid-back personality.</li>
+        </ul>
+        <h1>Supporting Cast:</h1>
+        <ul>
+          <li>Vecna: The true identity of the Upside Down entity, manipulating Billy and others.
+          </li>
+          <li>Victor Creel: A man who encountered Vecna years ago and left clues to his return.</li>
+          <li>Robin Buckley: Now working at a video store and exploring her sexuality.</li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mVsJXiI60a0?si=tVS4Cpm8lUv21ryH"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/Stranger Things 4.jpeg" alt="Season 4 Poster" class="poster">
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('nav');
+      var scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+      } else {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+      }
+    });
+  </script>
+</body>
+
+</html>

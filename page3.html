@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bungee', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .logo {
+      float: left;
+      margin-right: 20px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+      transform: translateY(-3px);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-10%, -50%);
+      text-align: left;
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: red;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px red;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    section.about {
+      background-color: #000;
+      color: #fff;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-info {
+      width: 45%;
+    }
+
+    .about-info h2 {
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    .poster {
+      width: 45%;
+    }
+
+    .red-line {
+      border: 2px solid darkred;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    audio {
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio controls autoplay loop>
+    <source src="audio/Stranger Things (Extended)_256k.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" height="40">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Characters</a>
+    <a href="page3.html">Monsters</a>
+  </nav>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Demogorgon</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>Nothing is known about the origins of this specific Demogorgon or its home, but it was discovered by an
+        enhanced child named "Eleven," whose abilities were originally utilized by Dr. Brenner for espionage. During her
+        encounter with the Demogorgon, Eleven touches it, and the creature to use her contact with it to build a "Gate"
+        to the reality she knew, and thus releasing it into her world, where it hunts animals and people.</p>
+      <p>It is a monstrous creature that hails from a parallel dimension reminiscent to a dark reflection of the world
+        known as the Upside Down. It has the ability to create doors to other dimensions, and feed on inhabitants from
+        there. After a gate was opened in Hawkins Lab, the Demogorgon begins crossing the two dimensions and feeding on
+        people, until it was ultimately killed by Eleven.</p>
+    </div>
+    <div class="poster">
+      <img src="images/AdultDemogorgon.jpg" alt="Demogorgon">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Vines</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>Vines, also referred to as tendrils, are one of the dominant forms of life present in the Upside Down, and make
+        up part of the Mind Flayer's hive mind; the vines are a form of life existing somewhere between the traditional
+        idea of 'plant' and 'animal'. Vines would often emerge from within interdimensional gates, sprawling across the
+        surrounding surface.</p>
+      <p>The vines were animated by the Upside Down's hive mind. They grew like plants but behaved and moved like
+        snakes, and could bind, amass and tangle up many things, including humans. Furthermore, the tendrils were
+        vulnerable to brute force and fire.</p>
+    </div>
+    <div class="poster">
+      <img src="images/Webby_structure.png" alt="Vines">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Demodogs</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>They are a predatory species from a dimension known as "the Upside Down", which are controlled by Vecna and
+        serve as his army.</p>
+      <p>Adoscelent Demogorgons who haven't reached adulthood are known as Demodogs, a term coined by Dustin Henderson
+        due to them basically being Demogorgons whose behavior resemble that of dogs. </p>
+    </div>
+    <div class="poster">
+      <img src="images/Democao-1-0.jpg" alt="Demodogs">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Mind Flayer</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>A mysterious entity, made up entirely of silver-black particles, originated from an unknown alternate
+        dimension. This entity had many names, including the Shadow Monster, the particles, and the Mind Flayer.</p>
+      <p>The entity was gigantic, looming at least fifty stories tall[1], and sported a distinctive spider-like
+        appearance. The Mind Flayer exercised supreme control of the Upside Down via a psychic link, with Demogorgons,
+        vines, and Demobats forming a shared hive mind; for a period in 1985, possessed humans known as "the Flayed"
+        also comprised part of the hive mind. In a sense, the entirety of the Upside Down was like one gigantic
+        organism, with all its contents and agents mentally connected via the Mind Flayer.</p>
+    </div>
+    <div class="poster">
+      <img src="images/St_mind_flayer (1).png" alt="Mind Flayer">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Vecna</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>A fearsome entity aligned with the Upside Down, Vecna had humble origins as the human Henry Creel. After moving
+        to a new home in Hawkins in 1959, the young Henry discovered he had remarkable psychokinetic abilities and could
+        manipulate the perceptions of others. Motivated by a misanthropic and nihilistic philosophy, Henry used his
+        powers to psychologically torture his family, eventually killing his mother and sister. After Henry’s father,
+        Victor, was falsely presumed to be the killer, Victor was imprisoned and driven further into madness.</p>
+    </div>
+    <div class="poster">
+      <img src="images/vecna.jpg" alt="Vecna">
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('nav');
+      var scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        navbar.style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+      } else {
+        navbar.style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+      }
+    });
+  </script>
+</body>
+
+</html>
